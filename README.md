@@ -1,6 +1,6 @@
 # **Player Performance Prediction & Market Value Analysis Using FIFA21 Data**  
 
-🚀 **Predicting FIFA21 player market values using Machine Learning models (Linear Regression & SVM) on AWS SageMaker & EC2**  
+🚀 **Predicting FIFA21 player market values using Machine Learning models (Linear Regression & SVM)**  
 
 ## **Overview**  
 This project aims to predict the market value of FIFA21 players based on attributes like **overall rating, potential, and skill moves**. Using **Machine Learning techniques (Linear Regression & Support Vector Machines - SVM)**, we analyze key player factors that influence valuation and provide insights for **football clubs’ scouting & investment decisions**.  
