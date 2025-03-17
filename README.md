@@ -34,14 +34,9 @@ This project aims to predict the market value of FIFA21 players based on attribu
 
 ## **Technologies Used**  
 ✅ **Machine Learning**: Scikit-Learn, NumPy, Pandas  
-✅ **Cloud & Deployment**: Amazon SageMaker, EC2  
 ✅ **Data Processing**: KNN Imputation, Label Encoding, One-Hot Encoding  
 ✅ **Hyperparameter Tuning**: GridSearchCV  
 ✅ **Visualization**: Matplotlib, Seaborn  
 ✅ **Model Evaluation Metrics**: R², MAE, MSE, RMSE  
 
-## **How to Run the Project**  
-1️⃣ Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/fifa21-ml-prediction.git
-   cd fifa21-ml-prediction
+
