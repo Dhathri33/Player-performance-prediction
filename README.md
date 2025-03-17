@@ -1,53 +1,47 @@
-# Player-performance-prediction
+# **Player Performance Prediction & Market Value Analysis Using FIFA21 Data**  
 
-Player Performance Prediction & Market Value Analysis Using FIFA21 Data
-🚀 Predicting FIFA21 player market values using Machine Learning models (Linear Regression & SVM) on AWS SageMaker & EC2
+🚀 **Predicting FIFA21 player market values using Machine Learning models (Linear Regression & SVM) on AWS SageMaker & EC2**  
 
-Overview
-This project aims to predict the market value of FIFA21 players based on attributes like overall rating, potential, and skill moves. Using Machine Learning techniques (Linear Regression & Support Vector Machines - SVM), we analyze key player factors that influence valuation and provide insights for football clubs’ scouting & investment decisions.
+## **Overview**  
+This project aims to predict the market value of FIFA21 players based on attributes like **overall rating, potential, and skill moves**. Using **Machine Learning techniques (Linear Regression & Support Vector Machines - SVM)**, we analyze key player factors that influence valuation and provide insights for **football clubs’ scouting & investment decisions**.  
 
-Project Workflow
-🔹 Data Collection & Processing
+## **Project Workflow**  
+### 🔹 **Data Collection & Processing**  
+- Processed **18,000+ player records** with **100+ attributes** (market value, overall rating, wage, etc.).  
+- Cleaned missing data using **KNN Imputer (15 nearest neighbors)**.  
+- Encoded categorical variables with **Label Encoding & One-Hot Encoding**.  
 
-Processed 18,000+ player records with 100+ attributes (market value, overall rating, wage, etc.).
-Cleaned missing data using KNN Imputer (15 nearest neighbors).
-Encoded categorical variables with Label Encoding & One-Hot Encoding.
-🔹 Model Development & Training
+### 🔹 **Model Development & Training**  
+- Built and trained models using:  
+  - **Linear Regression** (Baseline predictive model).  
+  - **Support Vector Regression (SVR)** (For capturing complex patterns).  
+- **Hyperparameter tuning with GridSearchCV** to optimize **C, epsilon, and kernel**.  
 
-Built and trained models using:
-Linear Regression (Baseline predictive model).
-Support Vector Regression (SVR) (For capturing complex patterns).
-Hyperparameter tuning with GridSearchCV to optimize C, epsilon, and kernel.
-🔹 Deployment & AWS Integration
+### 🔹 **Deployment & AWS Integration**  
+- **Amazon SageMaker & EC2** used for scalable model training & inference.  
+- Feature scaling with **StandardScaler** to normalize input data.  
 
-Amazon SageMaker & EC2 used for scalable model training & inference.
-Feature scaling with StandardScaler to normalize input data.
-🔹 Evaluation & Results
+### 🔹 **Evaluation & Results**  
+| Metric | Linear Regression | SVM |  
+|--------|------------------|-----|  
+| **R² Score** | **96.95%** | **96.86%** |  
+| **Mean Absolute Error (MAE)** | 0.3548 | 0.3070 |  
+| **Root Mean Squared Error (RMSE)** | 0.8300 | 0.8425 |  
 
-Metric	Linear Regression	SVM
-R² Score	96.95%	96.86%
-Mean Absolute Error (MAE)	0.3548	0.3070
-Root Mean Squared Error (RMSE)	0.8300	0.8425
-🔹 Insights & Visualization
+### 🔹 **Insights & Visualization**  
+- Identified **top 10 most valuable players & clubs** based on market value.  
+- **Heatmaps & correlation analysis** show key player attributes affecting market value.  
 
-Identified top 10 most valuable players & clubs based on market value.
-Heatmaps & correlation analysis show key player attributes affecting market value.
-Technologies Used
-✅ Machine Learning: Scikit-Learn, NumPy, Pandas
-✅ Cloud & Deployment: Amazon SageMaker, EC2
-✅ Data Processing: KNN Imputation, Label Encoding, One-Hot Encoding
-✅ Hyperparameter Tuning: GridSearchCV
-✅ Visualization: Matplotlib, Seaborn
-✅ Model Evaluation Metrics: R², MAE, MSE, RMSE
+## **Technologies Used**  
+✅ **Machine Learning**: Scikit-Learn, NumPy, Pandas  
+✅ **Cloud & Deployment**: Amazon SageMaker, EC2  
+✅ **Data Processing**: KNN Imputation, Label Encoding, One-Hot Encoding  
+✅ **Hyperparameter Tuning**: GridSearchCV  
+✅ **Visualization**: Matplotlib, Seaborn  
+✅ **Model Evaluation Metrics**: R², MAE, MSE, RMSE  
 
-Results & Observations
-📌 Top influencing factors for player market value:
-
-Overall Rating & Potential – Strongest correlation with market value.
-Wage & Market Value – Higher wages usually indicate higher market worth.
-Sprint Speed & Acceleration – Impact attacking positions’ valuation.
-📌 Top 10 Most Valuable Players (FIFA21 Data):
-🏆 Kylian Mbappé (€106M), Neymar Jr., Kevin De Bruyne
-
-📌 Top 10 Most Valuable Football Clubs:
-🔴 Liverpool (€840M), Real Madrid, Manchester City
+## **How to Run the Project**  
+1️⃣ Clone the repository:  
+   ```bash
+   git clone https://github.com/yourusername/fifa21-ml-prediction.git
+   cd fifa21-ml-prediction
